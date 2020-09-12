@@ -1,0 +1,14 @@
+React Hooks
+
+useState()
+It is used to manage local state in function components.
+
+The useState hook accepts two argument
+the first variable is the actual state 
+the second variable is a function to update the state by providing a new state.
+
+[state_var,statefunc] = useState(value for the initial state);
+
+first value is the current state
+second value is called as state update function. 
+Every time this function is called, React re-renders the component to render the recent state.

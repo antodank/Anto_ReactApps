@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class Togglebutton extends Component {
+export default class ToggleButtonClass extends Component {
 
     constructor(props) {
         super(props);

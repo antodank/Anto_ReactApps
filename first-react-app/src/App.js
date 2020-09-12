@@ -2,9 +2,13 @@ import React from 'react';
 import './App.css';
 import FirstComponent from './FirstComponent';
 import ClassCompo from './ClassCompo';
-import TodoApp from './TodoApp';
-import CounterApp from './counter-app';
-import Togglebutton from './Togglebutton';
+import CounterApp from './CounterApp';
+import TogglebuttonClass from './ToggleButtonClass';
+import TogglebuttonFunc from './ToggleButtonFunc';
+import Cityweather from './Cityweather'
+import GetQuotes from './GetQuotes'
+import ParentComponent from './ParentComponent'
+
 
 
 function App() {
@@ -17,28 +21,46 @@ function App() {
             Add components in <code>src/App.js</code> and then save to reload page.
           </p>
           {/* Registering first component */}
-          <div>
-            <FirstComponent name="Ankit">
-            </FirstComponent>
+          <div className="flex-grid-thirds">
+            <div className="col">
+              <FirstComponent name="Ankit">
+              </FirstComponent>
+            </div>
+            <div className="col">
+              <ClassCompo name="Viraj">
+              </ClassCompo>
+            </div>
+
+             {/* UseState demo */}
+            <div className="col">
+              <ParentComponent></ParentComponent>
+            </div>
+
+            
           </div>
-          <div>
-            <ClassCompo name="Viraj">
-            </ClassCompo>
+         
+          <div className="flex-grid">
+
+          <div className="col">
+              <TogglebuttonFunc></TogglebuttonFunc>
+            </div>
+
+             <div className="col">
+              <CounterApp>
+              </CounterApp>
+            </div>
           </div>
 
-          {/* UseState demo */}
-          <div>
-            <CounterApp>
-            </CounterApp>
-          </div>
            {/* nested component demo */}
+        
+         
+
           <div>
-            <TodoApp>
-            </TodoApp>
+          <Cityweather></Cityweather>
           </div>
 
           <div>
-            <Togglebutton></Togglebutton>
+            <GetQuotes></GetQuotes>
           </div>
          
          

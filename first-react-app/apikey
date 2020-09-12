@@ -1,0 +1,12 @@
+
+ankitkt.mob@gmail.com
+Jack@2020
+3291ae1df7a4ded463752dd58773399a
+
+var req = unirest("GET", "https://community-open-weather-map.p.rapidapi.com/weather");
+
+req.headers({
+	"x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
+	"x-rapidapi-key": "323b2e70c9msh6c6f03b0de192fcp10b3b6jsnefcd108492d9",
+	"useQueryString": true
+});

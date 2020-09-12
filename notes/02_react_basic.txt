@@ -1,0 +1,53 @@
+The ReactJS library is useful for handling the relationship between views, state, and changes in state.
+
+>>>>>>>>>>>>>>> React component
+Views are created inside of components.
+
+Two types of components: class and function
+
+class component - 
+render() {
+    return (
+      <div>
+        <h1>This is a view created by a class component</h1>
+      </div>
+    );
+
+function component returns the view and does not need a render function
+
+return (
+        <div>
+            <h1>This is a function component view</h1>
+        </div>
+    )
+
+>>>>>>>>>>>>>>> Props
+We can pass data or functions down into components through props.
+
+JSX
+JSX looks like an HTML templating language but is more powerful. 
+JSX can embed data into a view using curly brackets.
+
+ <div>
+      {showMyName()}
+ </div>
+ 
+It looks very similar to HTML but has many differences. A few are:
+
+passing custom props as attributes on an element tag
+	<TodoList todosList={todos}>
+	</TodoList>
+here todosList is a custom tag
+
+Instead of assigning CSS classes with class=, JSX uses className=. Camel casing is used for event listeners as well (I.e onClick, onHover).
+<header className="App-header">
+
+closing tags are different depending on the elements. Below are a few examples.
+<img class="" src="" alt="" ></img>
+
+<input type="text" required></input>
+
+
+>>>>>>>>>>>> Side Effects
+Side effects occur when a function goes outside of its scope or it is affected by something outside of the function body. 
+Making an HTTP request and saving the result to the components state is a side effect.
