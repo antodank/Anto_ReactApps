@@ -12,3 +12,19 @@ the second variable is a function to update the state by providing a new state.
 first value is the current state
 second value is called as state update function. 
 Every time this function is called, React re-renders the component to render the recent state.
+
+
+useEffect()
+
+By using this Hook, you tell React that your component needs to do something after render.
+
+The idea to use useEffect hook is to execute code that needs happens during lifecycle of the component 
+instead of on specific user interactions or DOM events.
+
+componentDidMount, componentDidUpdate, and componentWillUnmount combined.
+
+useEffect is an alternative for lifecycle method in class components in a functional component. 
+It can be used to execute actions when the component mounts, or certain prop or state updated for component as well as 
+to execute code when the component is about to unmount
+
+By default, it runs both after the first render and after every update.
