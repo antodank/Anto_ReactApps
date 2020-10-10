@@ -1,0 +1,216 @@
+// Transition Mixin
+@mixin transition ($property, $duration, $timing-function) {
+    transition-property: $property;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+  }
+  
+  // Vars
+  $color-primary: #fff;
+  $font-primary: 'Oxygen';
+  
+  /* 
+     Layout: Primary
+  */
+  
+  body {
+      background-color: darkgreen;
+    font-family: $font-primary, sans-serif;
+      line-height: normal;
+  }
+  
+  .container {
+    max-width: 50rem;
+    margin: 2.5rem auto;
+    padding: 0 .8em;
+    @media (min-width: 28.75rem) {
+      margin: 4.5rem auto;
+    }
+  }
+  
+  .signup {
+    max-width: 37.5rem;
+    margin: 0 auto;
+    overflow: hidden;
+    &__form {
+  
+    }
+    &__message {
+      color: $color-primary;
+      font-size: 13px;
+      padding: 12px 0;
+      &--center {
+        text-align: center;
+        color: #637077;
+      }
+    }
+    &__link {
+      color: #00b0df;
+      @include transition(color, .1s, ease-in-out);
+      &:hover {
+        color: lighten(#00b0df, 10%);
+      }
+    }
+  }
+  
+  .social {
+    text-align: center;
+    &__button {
+      display: block;
+      color: $color-primary;
+      width: 100%;
+      padding: 9px 0;
+      @include transition(background, .1s, ease-in-out);
+      &--facebook {
+        background-color: #3b5998;
+        margin-bottom: 10px;
+        &:hover {
+          background: lighten(#3b5998, 8%);
+        }
+        &:active {
+          background: darken(#3b5998, 10%);
+        }
+      }
+      &--twitter {
+        background-color: #55acee;
+        &:hover {
+          background: lighten(#55acee, 8%);
+        }
+        &:active {
+          background: darken(#55acee, 10%);
+        }
+      }
+    }
+    @media (min-width: 28.75rem) {
+      &__button {
+        width: 50%;
+        float: left;
+        &--facebook {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  
+  .input {
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+    padding: 9px 10px;
+    color: #666;
+      line-height: 33px;
+    border-left: 4px solid transparent;
+    transition: border .1s ease-in;
+    &--small {
+      @media (min-width: 28.75rem) {
+        width: 49.2%;
+        float: left;
+        &:first-child {
+          margin-right: 1.6%;
+        }
+      }
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &:focus {
+      border-left: 4px solid #40a46f;
+      outline: none;
+    }
+  }
+  
+  .button {
+    font-size: 1rem;
+    text-align: center;
+    display: inline-block;
+    @include transition(background, .1s, ease-in-out);
+    &--submit {
+      padding: 9px;
+      width: 100%;
+      background-color: #40a46f;
+      color: #fff;
+      &:hover {
+        background: lighten(#40a46f, 8%);
+      }
+      &:active {
+        background: darken(#40a46f, 10%);
+      }
+    }
+  }
+  
+  .fa {
+      margin-right: 15px;
+      font-size: 1.5rem;
+  }
+  
+  /* 
+      Helper classes and reset
+  */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  button {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+      line-height: normal;
+    background: none;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* 
+      Layout: Secondary
+      All non-project related stuff, for example, footer 		credits.
+  */
+  .footer {
+    max-width: 37.5rem;
+      padding-bottom: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: .8em;
+    a {
+      color: #00b0df;
+      &:hover {
+        color: lighten(#00b0df, 10%);
+      }
+    }
+    P {
+      margin: 0;
+    }
+  }
+  
+  /* 
+      Sticky footer using flex 
+  */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    flex: 1;
+  }
