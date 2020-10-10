@@ -15,7 +15,7 @@ export default function GetQuotes() {
             "headers": {
               "content-type": "application/json",
               "x-rapidapi-host": "quotes15.p.rapidapi.com",
-              "x-rapidapi-key": "323b2e70c9msh6c6f03b0de192fcp10b3b6jsnefcd108492d9"
+              "x-rapidapi-key": ""
             }, "params": {
               "language_code": "en"
             }

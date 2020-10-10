@@ -17,7 +17,7 @@ export default function Cityweather() {
                 method: 'Get',
                 headers: {
                     "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
-                    "x-rapidapi-key": "323b2e70c9msh6c6f03b0de192fcp10b3b6jsnefcd108492d9",
+                    "x-rapidapi-key": "",
                     "useQueryString": true}
                 });
 
@@ -58,7 +58,7 @@ export default function Cityweather() {
     //         "headers": {
     //             "content-type": "application/json",
     //             "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
-    //             "x-rapidapi-key": "323b2e70c9msh6c6f03b0de192fcp10b3b6jsnefcd108492d9",
+    //             "x-rapidapi-key": "",
     //             "useQueryString": true
     //           }
     //     }
