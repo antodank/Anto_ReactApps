@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState} from 'react'
 
 export default function Counterbtn() {
 
@@ -14,11 +14,7 @@ export default function Counterbtn() {
           alert(`After Counter - ${countstate}`);
         }, 5000);
       }
-
-    // useEffect(() => {
-    //     showCount();
-    // })
-
+      
     return (
         <div>
             <div><h1>{countstate}</h1></div>
