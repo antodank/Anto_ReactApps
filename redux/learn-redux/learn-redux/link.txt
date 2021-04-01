@@ -1,0 +1,9 @@
+https://github.com/rajjeet
+
+https://www.codementor.io/@rajjeet/step-by-step-how-to-add-redux-to-a-react-app-11tcgslmvi
+
+
+
+redux vs context API
+
+https://www.codehousegroup.com/insight-and-inspiration/tech-stream/using-redux-and-context-api

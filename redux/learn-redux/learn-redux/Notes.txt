@@ -1,0 +1,16 @@
+>>> npm install redux react-redux
+
+>>> import { Provider } from 'react-redux';
+
+>>> Create a Reducer
+ A reducer is a pure function that accepts 2 parameters: state and action. 
+ State can be anything, including objects. Action is an object with type property that specifies the type of action as a string.
+
+>>> Create a Redux Store
+The store holds the state as one big global object known as a state tree. The store allows us to:
+- 'dispatch' actions to modify the state
+- 'subscribe' to recieve notification about state changes
+- 'retrieve' the entire state tree
+
+
+>>>  Now we will connect redux to react. For that wrap the Main App Component with Provider

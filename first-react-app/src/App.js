@@ -8,6 +8,7 @@ import TogglebuttonFunc from './ToggleButtonFunc';
 import Cityweather from './Cityweather'
 import GetQuotes from './GetQuotes'
 import ParentComponent from './ParentComponent'
+import AddRuntimeElement from './AddRuntimeElement';
 
 
 
@@ -63,7 +64,9 @@ function App() {
             <GetQuotes></GetQuotes>
           </div>
          
-         
+          <div>
+            <AddRuntimeElement></AddRuntimeElement>
+          </div>
 
         </header>
       </div>
