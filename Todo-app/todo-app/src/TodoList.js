@@ -3,8 +3,8 @@ import Todo from './Todo';
 
  function TodoList({todosList}) {
     return (
-        todosList.map(todo =>{
-           return <Todo key={todo.key} todo ={todo} ></Todo>
+        todosList.map((todo,index) =>{
+           return <Todo key={index} todo ={todo} ></Todo>
         })
     )
 }

@@ -1,0 +1,9 @@
+dynamic-form-
+https://dev.to/fuchodeveloper/dynamic-form-fields-in-react-1h6c
+
+
+https://codesandbox.io/s/react-dynamic-form-fields-3fjbd?from-embed=&file=/src/index.js:834-846
+
+https://codesandbox.io/s/signupregistration-form-reactmaterialui-fr71m?file=/src/components/Registration.jsx:3348-3360
+
+https://itnext.io/building-a-dynamic-controlled-form-in-react-together-794a44ee552c

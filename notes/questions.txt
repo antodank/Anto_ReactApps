@@ -1,0 +1,40 @@
+NodeJs
+How does Node.js work?
+Explain callback in Node.js.
+Why is Node.js Single-threaded?
+What is NPM?
+Explain the concept of middleware in Node.js.
+What are the different types of HTTP requests?
+Why is Node.js preferred over other backend technologies like Java and PHP?
+What does event-driven programming mean?
+What is an Event Loop in Node.js?
+What are the two types of API functions in Node.js?
+What are streams in Node.js?
+What is the purpose of module.exports?
+What is REPL in Node.js?
+What is piping in Node.js?
+What is the buffer class in Node.js?
+
+
+ReactJS
+What is React?
+What is JSX?
+What is the difference between Element and Component?
+What are Pure Components?
+When to use a Class Component over a Function Component?
+What is the difference between state and props?
+Why should we not update the state directly?
+What is the difference between HTML and React event handling?
+How to bind methods or event handlers in JSX callbacks?
+What is the use of refs?
+How to create refs?
+What is Virtual DOM?
+How Virtual DOM works?
+What is the difference between Shadow DOM and Virtual DOM?
+What is reconciliation?
+What is context?
+What are children prop?
+What are fragments?
+What is the purpose of getSnapshotBeforeUpdate() & lifecycle method?
+What are React Mixins?
+What is the difference between super() and super(props) in React using ES6 classes?
