@@ -1,3 +1,20 @@
 https://www.robinwieruch.de/
 
 https://www.valentinog.com/blog/hooks/
+
+https://welearncode.com/complete-beginners-guide-react-2020/
+
+https://www.robinwieruch.de/react-hooks
+
+https://daveceddia.com/react-getting-started-tutorial/
+https://daveceddia.com/usestate-hook-examples/
+https://daveceddia.com/useeffect-hook-examples/
+
+https://codesandbox.io/s/6wo1673y2r?from-embed=&file=/app/view-components/todos/Todos.js
+
+https://www.taniarascia.com/crud-app-in-react-with-hooks/
+
+https://www.freecodecamp.org/news/8-reactjs-project-ideas-to-start-learning-by-doing/
+
+Router
+https://dev.to/amanhimself/using-react-router-to-optimize-single-page-applications-4mim

@@ -1,3 +1,13 @@
+React is a UI library. 
+It draws components on a web page. 
+You write components as JavaScript functions or classes, pass them to React, and it will call them to figure out what the page should look like.
+
+You described what to render, React rendered it, and React is done.
+React is not constantly running in the background waiting for something to happen.
+
+https://daveceddia.com/react-getting-started-tutorial/
+
+
 if npx is not installed -
 npm i -g npx
 

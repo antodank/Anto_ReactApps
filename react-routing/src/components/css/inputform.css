@@ -1,0 +1,95 @@
+
+.form-vertical{
+    margin-bottom:20px
+  }
+  
+  .form-vertical input,.form-vertical select,.form-vertical textarea{
+      display:block;
+      margin-bottom:30px;
+    }
+  
+  .form-vertical .btn,.form-vertical input[type=checkbox],.form-vertical input[type=radio]{
+      display:inline-block;
+    }
+  
+  input.error,textarea.error{
+      border-color:#d02e2e;
+      background-color:#fff6f6;
+      color:#d02e2e;
+    }
+  
+  label.error{
+    color:#d02e2e;
+  }
+  
+  ::-ms-input-placeholder{
+     color:inherit;
+     opacity:0.5;
+  }
+  
+  ::placeholder{
+     color:inherit;
+     opacity:0.5;
+  }
+  
+  .input-group{
+    display:flex
+  }
+  
+  .input-group .input-group-btn:first-child,.input-group .input-group-btn:first-child>.btn,.input-group input[type=hidden]:first-child+.input-group-btn>.btn{
+      border-radius:var(--buttonRadius) 0 0 var(--buttonRadius);
+    }
+  
+  .input-group .input-group-btn:last-child>.btn{
+      border-radius:0 var(--buttonRadius) var(--buttonRadius) 0;
+    }
+  
+  .input-group .input-group-field:last-child{
+      padding-left:10px;
+    }
+  
+  .input-group input::-moz-focus-inner{
+        border:0;
+        padding:0;
+        margin-top:-1px;
+        margin-bottom:-1px;
+      }
+  
+  .input-group-btn,.input-group-field{
+    margin:0;
+  }
+  
+  .input-group .input-group-field{
+    flex:1 1 auto;
+    border-radius:0;
+    color:currentColor;
+    border-color:currentColor;
+    min-width:0;
+  }
+  
+  .input-group-btn{
+    flex:0 1 auto;
+    padding:0
+  }
+  
+  .input-group-btn .icon{
+      vertical-align:baseline;
+      vertical-align:initial;
+    }
+  
+  .input-group-btn .btn{
+    margin-top:0;
+    height:100%
+  }
+  
+  .input-group-btn .btn:hover{
+      padding-right:20px;
+    }
+  
+  .icon{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    vertical-align:middle;
+    fill:currentColor
+  }

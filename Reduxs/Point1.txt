@@ -1,0 +1,57 @@
+It's a state container for javascript applications. 
+It holds all the data you need for your application in one place.
+Every component within your application has its space in the state container where it looks for data.
+
+Actions
+The idea is that you dispatch actions onto redux, and based on those actions the state is modified.
+An action is just a plain object with a type key
+
+// this is an action
+{
+    type: "SOME_ACTION",
+    payload: {}
+}
+
+Action Creators
+As name suggest they create they create the action objects for you.
+
+const SOME_ACTION = "SOME_ACTION";
+
+function create_action(data) {
+    return {
+        type: SOME_ACTION,
+        payload: data
+    }
+}
+
+eg - 
+const FETCH_COFFEE_SUCCESS = "FETCH_COFFEE_SUCCESS";
+
+const fetchCoffeeSuccess = (coffeeData) => {
+  return {
+    type: actionTypes.FETCH_COFFEE_SUCCESS,
+    coffeeData: coffeeData,
+  };
+};
+
+
+reducer - is a function that accept state and action as arguament and return the next state of the application
+After an action is dispatched, it will be passed to a reducer. 
+More complex applications most likely have multiple reducers, each one responsible for a single part of the state
+Important to notice that reducers are pure functions. They never call something like an API or dispatch another action to redux.
+
+
+const  store = createStore(reducername,)
+
+
+
+Create Components
+Create relevant actions
+Create reducers for the actions
+Combine all reducers
+Configure store with createStore
+Provide store to root component
+Connect container to redux with connect()
+
+https://scotch.io/tutorials/build-a-bookshop-with-react-redux-i-react-redux-flow
+

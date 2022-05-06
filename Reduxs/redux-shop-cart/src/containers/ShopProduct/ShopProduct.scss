@@ -1,0 +1,10 @@
+.product-displayed {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background-color: #f3f3f3;
+    text-align: center;
+    border-radius: 7px;
+    padding: 10px;
+    flex-wrap: wrap;
+  }

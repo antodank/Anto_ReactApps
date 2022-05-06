@@ -1,0 +1,23 @@
+.page-container {
+    margin: 0 auto 0;
+    max-width: 1350px;
+  }
+  
+  .container {
+    display: flex;
+  
+    .special-offers {
+      margin-right: 20px;
+      border: 2px solid black;
+      width: 60%;
+      height: 450px;
+    }
+  
+    .news {
+      margin-left: 20px;
+      border: 2px solid black;
+      width: 40%;
+      height: 450px;
+    }
+  }
+  

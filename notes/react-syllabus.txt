@@ -1,0 +1,60 @@
+JavaScript/ES6:
+
+All the parts you'll need for React: arrow functions, let/const, destructuring, rest & spread operators, and more
+Master the common Array functions like map, filter, and reduce. (you'll finally understand reduce!)
+Learn to use imports and exports
+Hands-On React Basics:
+
+Master React's JSX template syntax including loops and conditionals
+Learn to turn sketches into components
+Create components that render dynamic content with props and children
+Hooks:
+
+Learn to develop with React's new Hooks: useState, useReducer, useEffect, useContext, and more.
+Demystify the "magic" behind how Hooks actually work
+Learn to handle both simple and complex state
+And more Hooks!
+
+Create your own reusable, composable code with Custom Hooks
+Optimize components for performance with the useMemo and useCallback hooks
+Learn how to refactor simple and complex class components to Hooks
+Ways to deal with stale data and closures
+Effects:
+
+Learn how to think in "effects", the Hooks-y replacement for lifecycle methods
+I'll show you the right way to use useEffect
+Avoid common mistakes with useEffect's (confusing) "dependency array" argument
+Learn to fetch data inside effects, with both async/await and Promises
+Classes:
+
+Create stateful components with React classes
+Learn how to setState the right way to avoid bugs
+Create forms with multiple input controls
+Lifecycles:
+
+Learn to think in lifecycles, including when and where to fetch data
+Optimize components with shouldComponentUpdate
+Real-world examples of less common lifecycles like getSnapshotBeforeUpdate and getDerivedStateFromProps
+Implement error handling with componentDidCatch and multiple error boundaries
+State management:
+
+Manage simple and complex state within components
+Learn to share state between components with the Context API
+Immutability: how to work with it effectively on arrays and objects (and why it matters)
+The React Context API:
+
+Context can replace complex solutions like Redux when your app is simple
+Learn when the Context API is the right choice
+Learn to use multiple Contexts in a single app
+Learn to optimize Contexts to avoid common performance pitfalls
+Create a notification system and display popup notifications
+API calls and forms:
+
+Make API calls the "React way" and display data from a server
+Create forms to persist data to a server, including error handling
+Learn to debug API calls when things stop working
+Tools, but minimal:
+
+Set up projects quickly & easily with Create React App (skip the complex Webpack config)
+Use the React DevTools to debug live apps in the browser
+Measure and improve your app's performance with the DevTools Profiler

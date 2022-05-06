@@ -1,28 +1,38 @@
 import React from 'react';
-import '../App.css'
-import '../navigation.scss'
-import { Link } from 'react-router-dom'
+import '../App.css';
+import './css/navigation.css';
+import { Link } from 'react-router-dom';
+import { findRenderedComponentWithType } from 'react-dom/test-utils';
 
 export default function Nav() {
-    return (
 
-        <nav role="custom-dropdown">
+    const navstyle = {
+        color: 'white'
+    }
+
+    return (
+        <nav>
             <h3>
                 Company Name
             </h3>
-            <ul id="menu">
+            <ul className="nav-links">
             <li>
-                <Link to="/">
+                <Link style={navstyle} to="/">
                    Home
                 </Link>
             </li>
             <li>
-                <Link to="/Shop">
+                <Link style={navstyle}  to="/Shop">
                     Shop
                 </Link>
             </li>
             <li>
-                <Link to="/About">
+                <Link style={navstyle}  to="/Register">
+                    Register
+                </Link>
+            </li>
+            <li>
+                <Link style={navstyle}  to="/About">
                     About
                 </Link>
             </li>

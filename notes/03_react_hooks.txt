@@ -16,15 +16,45 @@ Every time this function is called, React re-renders the component to render the
 
 useEffect()
 
+useEffect runs after every render (by default), and can optionally clean up for itself before it runs again.
+
 By using this Hook, you tell React that your component needs to do something after render.
 
 The idea to use useEffect hook is to execute code that needs happens during lifecycle of the component 
 instead of on specific user interactions or DOM events.
 
-componentDidMount, componentDidUpdate, and componentWillUnmount combined.
-
 useEffect is an alternative for lifecycle method in class components in a functional component. 
 It can be used to execute actions when the component mounts, or certain prop or state updated for component as well as 
 to execute code when the component is about to unmount
 
-By default, it runs both after the first render and after every update.
+so basically it is a combined effect of componentDidMount, componentDidUpdate, and componentWillUnmount.
+
+When React renders our component, it will remember the effect we used, and then run our effect after updating the DOM.
+This happens for every render, including the first one.
+
+useEffect will only run after the render of a component is complete.
+Which means useeffect in parent wont be executed until all childs are rendered
+ 
+ -Prevent useEffect From Running Every Render
+if second parameter is not passed then useEffect() will run on every component render 
+if second parameter empty array [] as a way of saying “only run on mount, and clean up on unmount”.
+if second parameter [IsON] then useeffect() will run only if state variable value is changed
+
+usage - 
+to setting up subscriptions 
+to creating and cleaning up timers 
+to changing the value of a ref.
+
+Con - 
+an effect function will only fire after the browser is done with layout and pain
+
+React provides the useMutationEffect and useLayoutEffect for that.
+
+ 
+https://overreacted.io/a-complete-guide-to-useeffect/
+https://daveceddia.com/usestate-hook-examples/
+https://nikgraf.github.io/react-hooks/
+ 
+ useRef()
+ Sometimes you just want to do one tiny thing at mount time, then use this hook
+  useRef doesn’t notify you when its content changes

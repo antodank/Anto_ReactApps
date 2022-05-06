@@ -1,0 +1,27 @@
+.item {
+    background-color: white;
+    padding: 0 16px 16px;
+    border-radius: 7px;
+    margin: 12px 22px;
+    width: 84px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px #ccc;
+  
+    img {
+      height: 40px;
+      width: 40px;
+      margin-top: 10px;
+    }
+  
+    .name {
+      font-size: 18px;
+    }
+  
+    .size {
+      font-size: 16px;
+    }
+  
+    .price {
+      font-size: 12px;
+    }
+}
